@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>Test panel</title>
+</head>
+<body>
+<ul>
+    <li sec:authorize="isAuthenticated()">Welcome, <span sec:authentication="name"></span></li>
+    <li sec:authorize="isAuthenticated()"><a class="nav-link" href="/panel">Panel</a></li>
+    <li sec:authorize="isAuthenticated()"><a class="nav-link" href="/logout">Logout</a></li>
+    <li sec:authorize="isAnonymous()"><a class="nav-link" href="/login">Login</a></li>
+    <li sec:authorize="isAnonymous()"><a class="nav-link" href="/register">Register</a></li>
+</ul>
+
+</body>
+</html>

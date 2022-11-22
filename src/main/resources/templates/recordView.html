@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>Stal_Jak</title>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="table-responsive">
+    <table class="table table-hover table-bordered">
+        <tr th:text="${record.ident}"></tr>
+        <tr th:text="${record.pranal}"></tr>
+        <tr th:text="${record.datai}"></tr>
+        <tr th:text="${record.datao}"></tr>
+        <tr th:text="${record.dataz}"></tr>
+        <tr th:text="${record.datap}"></tr>
+        <tr th:text="${record.gat}"></tr>
+        <tr th:text="${record.koment}"></tr>
+        <tr th:text="${record.zatw}"></tr>
+        <tr th:text="${record.przygot}"></tr>
+        <tr th:text="${record.przygot_c}"></tr>
+        <tr th:text="${record.przygot_h}"></tr>
+        <tr th:text="${record.przygot_o}"></tr>
+        <tr th:text="${record.przygot_n}"></tr>
+        <tr th:text="${record.robo}"></tr>
+        <tr th:text="${record._C}"></tr>
+        <tr th:text="${record._Mn}"></tr>
+        <tr th:text="${record._Si}"></tr>
+        <tr th:text="${record._P}"></tr>
+        <tr th:text="${record._S}"></tr>
+        <tr th:text="${record._Cu}"></tr>
+        <tr th:text="${record._Cr}"></tr>
+        <tr th:text="${record._Ni}"></tr>
+        <tr th:text="${record._Mo}"></tr>
+        <tr th:text="${record._V}"></tr>
+        <tr th:text="${record._W}"></tr>
+        <tr th:text="${record._As}"></tr>
+        <tr th:text="${record._Alc}"></tr>
+        <tr th:text="${record._Alr}"></tr>
+        <tr th:text="${record._Sn}"></tr>
+        <tr th:text="${record._Sb}"></tr>
+        <tr th:text="${record._Co}"></tr>
+        <tr th:text="${record._Pb}"></tr>
+        <tr th:text="${record._Tic}"></tr>
+        <tr th:text="${record._Tir}"></tr>
+        <tr th:text="${record._Nb}"></tr>
+        <tr th:text="${record._Bc}"></tr>
+        <tr th:text="${record._Bro}"></tr>
+        <tr th:text="${record._Ca}"></tr>
+        <tr th:text="${record._Zn}"></tr>
+        <tr th:text="${record._Hc}"></tr>
+        <tr th:text="${record._Hd}"></tr>
+        <tr th:text="${record._O2}"></tr>
+        <tr th:text="${record._N2}"></tr>
+        <tr th:text="${record._Fe}"></tr>
+    </table>
+</div>
+</body>
+</html>

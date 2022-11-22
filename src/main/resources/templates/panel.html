@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>Test panel</title>
+</head>
+<body>
+<div th:if="${isUser}">
+    <form th:action="@{/stal_jak}" method="get">
+        <div><input type="submit" value="stal_jak"/></div>
+    </form>
+
+    <form th:action="@{/change_password}" method="get">
+        <div><input type="submit" value="change_password"/></div>
+    </form>
+    <form th:action="@{/add_record}" method="get">
+        <div><input type="submit" value="add_record"/></div>
+    </form>
+</div>
+<div th:if="${isUser}">
+    <form th:action="@{/users_list}" method="get">
+        <div><input type="submit" value="users_list"/></div>
+    </form>
+</div>
+<div>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Add Rekord</title>
+</head>
+<body>
+<div>
+    <li sec:authorize="isAuthenticated()"><a class="nav-link" href="/panel">Panel</a></li>
+    <li sec:authorize="isAuthenticated()"><a class="nav-link" href="/logout">Logout</a></li>
+</div>
+<form th:action="@{/add_record_New}" th:object="${rekord}" method="post">
+    <div><label>Data_i<input type="date" name="datai" th:field ="*{datai}"/></label></div>
+    <div><label>Data_o<input type="date" name="datao" th:field ="*{datao}"/></label></div>
+    <div><label>Data_z<input type="date" name="dataz" th:field ="*{dataz}"/></label></div>
+    <div><label>Data_p<input type="date" name="datap" th:field ="*{datap}"/></label></div>
+    <div><label> Pracownia : <input type="text" name="pranal" th:field ="*{pranal}"/> </label></div>
+    <div><label> Gat : <input type="text" name="gat" th:field ="*{gat}"/> </label></div>
+    <div><label> Komentarz : <input type="text" name="koment" th:field ="*{koment}"/> </label></div>
+    <div><label> Zatwierdzenie : <input type="text" name="zatw" th:field ="*{zatw}"/> </label></div>
+    <div><label> Przygot : <input type="text" name="przygot"/> </label></div>
+    <div><label> Przygot_C : <input type="text" name="przygot_c"/> </label></div>
+    <div><label> Przygot_H : <input type="text" name="przygot_h"/> </label></div>
+    <div><label> Przygot_O : <input type="text" name="przygot_o"/> </label></div>
+    <div><label> Przygot_N : <input type="text" name="przygot_n"/> </label></div>
+    <div><label> Robo : <input type="text" name="robo"/> </label></div>
+    <div><label> C : <input type="text" name="_C" th:field ="${rekord._C}"/> </label></div>
+    <div><label> Mn : <input type="text" name="_Mn" th:field ="*{_Mn}"/> </label></div>
+    <div><label> Si : <input type="text" name="_Si" /> </label></div>
+    <div><label> P : <input type="text" name="_P" /> </label></div>
+    <div><label> S : <input type="text" name="_S" /> </label></div>
+    <div><label> Cu : <input type="text" name="_Cu" /> </label></div>
+    <div><label> Cr : <input type="text" name="_Cr"/> </label></div>
+    <div><label> Ni : <input type="text" name="_Ni"/> </label></div>
+    <div><label> Mo : <input type="text" name="_Mo"/> </label></div>
+    <div><label> V : <input type="text" name="_V"/> </label></div>
+    <div><label> W : <input type="text" name="_W"/> </label></div>
+    <div><label> As : <input type="text" name="_As"/> </label></div>
+    <div><label> Alc : <input type="text" name="_Alc"/> </label></div>
+    <div><label> Alr : <input type="text" name="_Alr"/> </label></div>
+    <div><label> Sn : <input type="text" name="_Sn"/> </label></div>
+    <div><label> Sb : <input type="text" name="_Sb"/> </label></div>
+    <div><label> Co : <input type="text" name="_Co"/> </label></div>
+    <div><label> Pb : <input type="text" name="_Pb"/> </label></div>
+    <div><label> Tic : <input type="text" name="_Tic"/> </label></div>
+    <div><label> Tir : <input type="text" name="_Tir"/> </label></div>
+    <div><label> Nb : <input type="text" name="_Nb"/> </label></div>
+    <div><label> Bc : <input type="text" name="_Bc"/> </label></div>
+    <div><label> Bro : <input type="text" name="_Bro"/> </label></div>
+    <div><label> Ca : <input type="text" name="_Ca"/> </label></div>
+    <div><label> Zn : <input type="text" name="_Zn"/> </label></div>
+    <div><label> Hc : <input type="text" name="_Hc"/> </label></div>
+    <div><label> Hd : <input type="text" name="_Hd"/> </label></div>
+    <div><label> O2 : <input type="text" name="_O2"/> </label></div>
+    <div><label> N2 : <input type="text" name="_N2"/> </label></div>
+    <div><label> Fe : <input type="text" name="_Fe"/> </label></div>
+    <div><label> Ce1 : <input type="text" name="Ce1"/> </label></div>
+    <div><label> Ce2 : <input type="text" name="Ce2"/> </label></div>
+    <div><label> Rm : <input type="text" name="Rm"/> </label></div>
+    <div><input type="submit" value="Add record"/></div>
+</form>
+</body>
+</html>
